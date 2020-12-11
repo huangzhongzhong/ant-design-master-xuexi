@@ -3,7 +3,9 @@
 .button-size(@height; @padding-horizontal; @font-size; @border-radius) {
   @padding-vertical: max(
     round((@height - @font-size * @line-height-base) / 2 * 10) / 10 - @border-width-base,
-    0
+    0 //* 例如：（（32-14*1.575）/2*10）=49.75
+    //* 49.75四舍五入等于50
+    //* 50/10-1=4
   );
   height: @height;
   padding: @padding-vertical @padding-horizontal;

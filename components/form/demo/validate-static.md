@@ -106,7 +106,7 @@ ReactDOM.render(
     <Form.Item label="inline" style={{ marginBottom: 0 }}>
       <Form.Item
         validateStatus="error"
-        help="Please select the correct date"
+        help="Please select the correct datePlease select the correct date"
         style={{ display: 'inline-block', width: 'calc(50% - 12px)' }}
       >
         <DatePicker />
